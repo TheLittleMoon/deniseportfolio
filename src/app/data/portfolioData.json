@@ -1,0 +1,132 @@
+[
+    {
+      "gallery": "Logos",
+      "images": [
+        {
+          "title": "Big Sky Bootfitting",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/logos_webp/BigSkyBootfitting.webp",
+          "description": "Logo design for Big Sky Bootfitting, showcasing a modern and sporty aesthetic."
+        },
+        {
+          "title": "Four Peaks Management",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/logos_webp/Four%20Peaks%20Management.webp",
+          "description": "Brand identity for Four Peaks Management, reflecting professionalism and reliability."
+        },
+        {
+          "title": "Logo Conneva",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/logos_webp/LogoConneva.webp",
+          "description": "Minimalistic and clean logo design for Conneva, emphasizing connectivity."
+        },
+        {
+          "title": "Tarzan Bean",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/logos_webp/tarzanbean.webp",
+          "description": "Creative and playful logo for Tarzan Bean, highlighting their adventurous coffee brand."
+        },
+        {
+          "title": "Fat 2 Flat",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/logos_webp/Fat2flat.webp",
+          "description": "Bold and energetic branding for Fat 2 Flat, a fitness and lifestyle company."
+        },
+        {
+          "title": "Panda",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/logos_webp/Panda.webp",
+          "description": "Friendly and approachable logo for Panda, designed to represent care and trust."
+        },
+        {
+          "title": "To the Point",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/logos_webp/Tothepoint.webp",
+          "description": "Sharp and modern branding for To the Point, a consultancy firm."
+        }
+      ]
+    },
+    {
+      "gallery": "Talent Test",
+      "images": [
+        {
+          "title": "Favicon Berufs Finder",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/talent_test_webp/Favicon_berufsfinder.webp",
+          "description": "Favicon for Berufs Finder, a sleek and professional icon design."
+        },
+        {
+          "title": "Screenshot 2024-11-21",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/talent_test_webp/Screenshot%202024-11-21%20at.webp",
+          "description": "A screenshot showcasing the intuitive interface of the Talent Test application."
+        },
+        {
+          "title": "Info Page Talent Test",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/talent_test_webp/infopageTalentTest.webp",
+          "description": "Information page design for the Talent Test, providing clear and concise details."
+        },
+        {
+          "title": "Subjects Talent Test",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/talent_test_webp/subjectsTalentTest.webp",
+          "description": "Interactive subjects page for the Talent Test, allowing seamless user input."
+        },
+        {
+          "title": "Screenshot 2024-11-19",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/talent_test_webp/Screenshot%202024-11-19%20at.webp",
+          "description": "User-friendly dashboard from the Talent Test application."
+        }
+      ]
+    },
+    {
+      "gallery": "Films for Future",
+      "images": [
+        {
+          "title": "Broschüre 2024 Web Version",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/FilmsforFuture/Brosch%C3%BCre_2024_Webversion.pdf",
+          "description": "Digital brochure for Films for Future, highlighting their 2024 campaigns."
+        },
+        {
+          "title": "Hängekarton VBZ 2024",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/FilmsforFuture/H%C3%A4ngekarton-VBZ2024_25.pdf",
+          "description": "Poster design for VBZ 2024, focusing on sustainability and awareness."
+        },
+        {
+          "title": "Broschüre 25.10.2024 Druck",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/FilmsforFuture/Brosch%C3%BCre_25%3A10%3A2024_Druck.pdf",
+          "description": "Printed brochure for Films for Future, aimed at promoting eco-friendly initiatives."
+        },
+        {
+          "title": "Poster 2024",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/FilmsforFuture/Poster2024.pdf",
+          "description": "Promotional poster for Films for Future, showcasing key events of 2024."
+        },
+        {
+          "title": "Sponsorenwand",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/FilmsforFuture/Sponsorenwand.pdf",
+          "description": "Sponsor wall design for Films for Future, highlighting contributors and partners."
+        }
+      ]
+    },
+    {
+      "gallery": "Kilauea Jungle Oasis",
+      "images": [
+        {
+          "title": "Napali Coast",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/kilauea_jungle_oasis_webp/napalicoast.webp",
+          "description": "A stunning view of Napali Coast, representing the serenity of Kilauea Jungle Oasis."
+        },
+        {
+          "title": "King and Queen Jungle",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/kilauea_jungle_oasis_webp/kingandqueenjungle.webp",
+          "description": "A lush and green jungle scene from Kilauea Jungle Oasis."
+        },
+        {
+          "title": "Coconut Chocolate",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/kilauea_jungle_oasis_webp/coconut%20chocolate.webp",
+          "description": "Delicious coconut chocolates, a highlight from the Kilauea Jungle Oasis retreat."
+        },
+        {
+          "title": "Milk Chocolate",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/kilauea_jungle_oasis_webp/Milk%20chocolate.webp",
+          "description": "Handcrafted milk chocolates from the Kilauea Jungle Oasis."
+        },
+        {
+          "title": "Chameleon Color",
+          "url": "https://denise-assets.s3.eu-central-1.amazonaws.com/kilauea_jungle_oasis_webp/chameleon%20color.webp",
+          "description": "Colorful and vibrant chameleons, representing the biodiversity of the area."
+        }
+      ]
+    }
+  ]

@@ -1,76 +1,80 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import CustomLightbox from '../components/Lightbox'; // Import the updated lightbox component
+import portfolioData from '../data/portfolioData.json'; // Import your JSON data
 
-interface Project {
-  id: number;
+interface GalleryImage {
   title: string;
-  category: string;
-  image: string;
+  url: string;
+  description?: string; // Optional description for captions
 }
 
-const projects: Project[] = [
-  { id: 1, title: 'Project 1', category: 'UI Design', image: '/placeholder.svg' },
-  { id: 2, title: 'Project 2', category: 'Frontend Development', image: '/placeholder.svg' },
-  { id: 3, title: 'Project 3', category: 'Brand Identity', image: '/placeholder.svg' },
-  // Add more projects here
-]
-
-const categories = ['All', 'UI Design', 'Frontend Development', 'Brand Identity']
+interface Gallery {
+  gallery: string;
+  images: GalleryImage[];
+}
 
 export default function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useState('All')
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [currentSlides, setCurrentSlides] = useState<
+    { src: string; alt: string; description?: string }[]
+  >([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const filteredProjects = selectedCategory === 'All'
-    ? projects
-    : projects.filter(project => project.category === selectedCategory)
+  // Open Lightbox for a specific gallery
+  const handleOpenGallery = (gallery: Gallery) => {
+    const slides = gallery.images.map((image) => ({
+      src: image.url,
+      alt: image.title,
+      description: image.description, // Add description for captions
+    }));
+    setCurrentSlides(slides);
+    setCurrentIndex(0); // Start from the first image
+    setIsLightboxOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-200 to-purple-200 py-20 px-4">
       <h1 className="text-4xl font-bold text-center mb-8">My Portfolio</h1>
-      
-      <div className="flex justify-center mb-8">
-        {categories.map(category => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`mx-2 px-4 py-2 rounded-full ${
-              selectedCategory === category
-                ? 'bg-purple-500 text-white'
-                : 'bg-white text-purple-500'
-            }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
 
+      {/* Gallery Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProjects.map(project => (
-          <ProjectCard key={project.id} project={project} />
+        {portfolioData.map((gallery) => (
+          <motion.div
+            key={gallery.gallery}
+            whileHover={{ scale: 1.05 }}
+            className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+            onClick={() => handleOpenGallery(gallery)}
+          >
+            {/* Cover Photo */}
+            <Image
+              src={gallery.images[0].url} // Use the first image as the cover photo
+              alt={gallery.gallery}
+              width={500}
+              height={300}
+              className="w-full h-48 object-cover"
+            />
+            {/* Gallery Title */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-2">{gallery.gallery}</h3>
+              <p className="text-gray-600">
+                {gallery.images.length} {gallery.images.length > 1 ? 'items' : 'item'}
+              </p>
+            </div>
+          </motion.div>
         ))}
       </div>
+
+      {/* Lightbox */}
+      <CustomLightbox
+        isOpen={isLightboxOpen}
+        slides={currentSlides}
+        currentIndex={currentIndex}
+        onClose={() => setIsLightboxOpen(false)}
+      />
     </div>
-  )
+  );
 }
-
-interface ProjectCardProps {
-  project: Project;
-}
-
-function ProjectCard({ project }: ProjectCardProps) {
-  return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      className="bg-white rounded-lg overflow-hidden shadow-lg"
-    >
-      <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-      <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-        <p className="text-gray-600">{project.category}</p>
-      </div>
-    </motion.div>
-  )
-}
-

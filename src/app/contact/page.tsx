@@ -51,7 +51,7 @@ export default function Contact() {
           
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-              Where can we send our magical response?
+              Where can I send my magical response?
             </label>
             <input
               type="email"

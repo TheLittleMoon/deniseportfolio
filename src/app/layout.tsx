@@ -2,8 +2,15 @@ import './globals.css'
 import { Inter, Caveat } from 'next/font/google'
 import Navigation from './components/Navigation'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat' })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const caveat = Caveat({ 
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Your Name - Portfolio',
@@ -16,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${caveat.variable} font-sans`}>
+    <html lang="en" className={`${inter.className}`}>
+      <body className="min-h-screen bg-white">
         <Navigation />
         <main>{children}</main>
       </body>
